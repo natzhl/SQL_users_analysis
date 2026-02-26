@@ -5,5 +5,5 @@ SELECT
   DATE(created_at) AS date,
   COUNT(DISTINCT user_id) AS dau
 FROM `bigquery-public-data.thelook_ecommerce.events`
-GROUP BY 1
-ORDER BY 1;
+GROUP BY date
+ORDER BY date;
